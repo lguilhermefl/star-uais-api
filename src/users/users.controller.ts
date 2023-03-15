@@ -1,4 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UseGuards } from '@nestjs/common';
+import { AccessTokenGuard } from 'src/auth/guards/accessToken.guard';
 import { UsersService } from './users.service';
 import { UserViewModel } from './view-models/user-view-model';
 
@@ -6,6 +7,7 @@ import { UserViewModel } from './view-models/user-view-model';
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
+  @UseGuards(AccessTokenGuard)
   @Get()
   async findAll() {
     const users = await this.usersService.findAll();
