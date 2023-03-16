@@ -6,7 +6,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     cors: {
-      origin: ['*', 'https://star-uais-front.vercel.app'],
+      origin: ['http://localhost:5173', 'https://star-uais-front.vercel.app'],
       preflightContinue: false,
     },
   });
