@@ -39,7 +39,11 @@ export class PrismaUsersRepository implements UsersRepository {
   }
 
   async findAll(): Promise<User[]> {
-    const users = await this.prisma.user.findMany();
+    const users = await this.prisma.user.findMany({
+      orderBy: {
+        createdAt: 'desc',
+      },
+    });
 
     return users.map((user) => PrismaUserMapper.toDomain(user));
   }
