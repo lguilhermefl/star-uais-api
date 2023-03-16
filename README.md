@@ -1,4 +1,4 @@
-## Star Uais API
+# Star Uais API
 
 Front-end for the [Star Uais](https://github.com/lguilhermefl/star-uais-front) project
 
