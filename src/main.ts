@@ -5,14 +5,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    cors: {
-      origin: [
-        'http://localhost:5173',
-        'https://star-uais-front.vercel.app',
-        'https://star-uais-jyt427afo-lguilhermefl.vercel.app',
-      ],
-      preflightContinue: false,
-    },
+    cors: true,
   });
   app.useGlobalPipes(new ValidationPipe());
   const logger = new Logger('main');
