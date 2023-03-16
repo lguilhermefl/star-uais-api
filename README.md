@@ -1,6 +1,6 @@
 # Star Uais API
 
-Front-end for the [Star Uais](https://github.com/lguilhermefl/star-uais-front) project
+This is an API built for the [front-end Star Uais project](https://github.com/lguilhermefl/star-uais-front) 
 
 ## Getting started
 
