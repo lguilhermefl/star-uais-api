@@ -8,7 +8,7 @@ First, clone the repository and install the dependencies.
 
 ```bash
 git clone git@github.com:lguilhermefl/star-uais-api.git
-cd api
+cd star-uais-api
 npm install
 ```
 This API uses MongoDB as a database and JWT for auth security. You'll need to create a `.env` with the following variables:
