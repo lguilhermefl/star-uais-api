@@ -39,4 +39,4 @@ $ npm run start
 
 ## License
 
-[MIT licensed](LICENSE).
+[MIT licensed](LICENSE)
