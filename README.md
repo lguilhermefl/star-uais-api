@@ -30,10 +30,7 @@ npx prisma db push
 ## Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
+# development with watch mode
 $ npm run start:dev
 
 # production mode
